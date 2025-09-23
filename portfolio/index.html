@@ -16,9 +16,10 @@
             --bg: #ffffff;
             --bg-alt: #f8f9fa;
             --text: #333333;
-            --text-weak: #666666;
+            --text-weak: #d2d0d0;
+            --project-description: #2a2f3a;
             --text-strong: #080808;
-            --card-bg: #ffffff;
+            --card-bg: #f3f4f6;
             --card-border: #f0f0f0;
             --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.08);
             --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -30,6 +31,7 @@
             --bg-alt: #131720;
             --text: #e6e6e6;
             --text-weak: #b3b3b3;
+            --project-description: #b3b3b3;
             --text-strong: #ffffff;
             --card-bg: #161a23;
             --card-border: #2a2f3a;
@@ -185,7 +187,7 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            color: #4a5565;
+            color: #364153;
         }
 
         .cta-button {
@@ -350,8 +352,8 @@
             background: #080808 !important;
             color: #ffffff !important;
             text-align: center;
-            padding: 2rem 0;
-            margin: 0;
+            padding: 1.5rem 0;
+            margin: -35px auto;
             width: 100vw;
             position: relative;
             left: 50%;
@@ -372,7 +374,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: #288b4c;
+            background: #364153;
             transform: translateX(-50%);
         }
 
@@ -400,7 +402,7 @@
         }
 
         .experience-content {
-            background: #f0fdf4;
+            background: #f3f4f6;
             padding: 2rem;
 
             border: 2px solid var(--card-border);
@@ -420,7 +422,7 @@
         }
 
         .experience-company {
-            color: #288b4c;
+            color: #054fef;
             margin-bottom: 1rem;
         }
 
@@ -507,35 +509,19 @@
         }
 
         .project-content {
-            padding: 2rem;
+            padding: 1rem;
         }
 
         .project-title {
             font-size: 1.3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             color: var(--text-strong);
         }
 
         .project-description {
             margin-bottom: 1.5rem;
             line-height: 1.6;
-            color: var(--text-weak);
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .tech-tag {
-            background: rgba(139, 173, 243, 0.1);
-            color: var(--text-strong);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            border: 1px solid var(--text-strong);
+            color: var(--project-descrition);
         }
 
         /* Contact Section */
@@ -852,12 +838,6 @@
                         <h3 class="project-title">Photo Collage Maker & Editor</h3>
                         <p class="project-description">A creative app for capturing memorable moments with unique
                             layouts, frames, filters, emoji, and stickers. Available on both Android and iOS.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Google Ads</span>
-                            <span class="tech-tag">In-App Review</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -868,12 +848,6 @@
                         <h3 class="project-title">Tex Bazar</h3>
                         <p class="project-description">E-commerce app for one of Bangladesh's top online shopping
                             platforms, featuring dynamic UI, cart management, and payment integration.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Riverpod</span>
-                            <span class="tech-tag">SSL Commerce</span>
-                            <span class="tech-tag">Firebase FCM</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -886,12 +860,6 @@
                         <h3 class="project-title">Document Scanner - PDF Scanner</h3>
                         <p class="project-description">Full-featured mobile document scanner with OCR text extraction,
                             signature drawing, image editing, and PDF/JPG export capabilities.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">OCR</span>
-                            <span class="tech-tag">Image Processing</span>
-                            <span class="tech-tag">PDF Generation</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -904,12 +872,6 @@
                         <h3 class="project-title">Book3m Multi Vendor</h3>
                         <p class="project-description">Multi-vendor marketplace app with Google Maps integration,
                             location search, and drag-drop pin functionality for enhanced user experience.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">GetX</span>
-                            <span class="tech-tag">Google Maps</span>
-                            <span class="tech-tag">Location Services</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -922,12 +884,6 @@
                         <h3 class="project-title">QR Code & Barcode Scanner</h3>
                         <p class="project-description">User-friendly scanner and generator app with camera/gallery
                             support, flashlight integration, and social media sharing capabilities.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Camera</span>
-                            <span class="tech-tag">QR/Barcode</span>
-                            <span class="tech-tag">Share Plus</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -940,12 +896,6 @@
                         <h3 class="project-title">Abedok Job Application</h3>
                         <p class="project-description">Job application platform with filtered circular search, one-tap
                             application, exam center redirection, and instant result notifications.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Provider</span>
-                            <span class="tech-tag">Push Notifications</span>
-                            <span class="tech-tag">Job Portal</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -958,12 +908,6 @@
                         <h3 class="project-title">Weather Forecast App</h3>
                         <p class="project-description">Real-time weather forecasting app with location-based updates,
                             7-day forecast, weather alerts, and beautiful animated weather icons.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Weather API</span>
-                            <span class="tech-tag">Geolocation</span>
-                            <span class="tech-tag">Animations</span>
-                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -976,87 +920,10 @@
                         <h3 class="project-title">Food Delivery App</h3>
                         <p class="project-description">Complete food delivery platform with restaurant listings,
                             real-time order tracking, payment integration, and customer reviews system.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Google Maps</span>
-                            <span class="tech-tag">Payment Gateway</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/music-player.jpg');">
-                        <div class="project-banner-overlay">
-                            <div class="project-banner-icon">🎵</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Music Streaming Player</h3>
-                        <p class="project-description">Feature-rich music player with playlist management, equalizer,
-                            lyrics display, offline playback, and social sharing capabilities.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Audio Players</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Custom UI</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/fitness-tracker.jpg');">
-                        <div class="project-banner-overlay">
-                            <div class="project-banner-icon">💪</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Fitness Tracker & Workout</h3>
-                        <p class="project-description">Comprehensive fitness app with workout plans, progress tracking,
-                            calorie counter, step counter, and personalized fitness goals.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Health Kit</span>
-                            <span class="tech-tag">Charts</span>
-                            <span class="tech-tag">Notifications</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/expense-manager.jpg');">
-                        <div class="project-banner-overlay">
-                            <div class="project-banner-icon">💰</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Personal Expense Manager</h3>
-                        <p class="project-description">Smart expense tracking app with budget planning, category-wise
-                            spending analysis, bill reminders, and financial goal setting features.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Charts</span>
-                            <span class="tech-tag">Local Notifications</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/chat-app.jpg');">
-                        <div class="project-banner-overlay">
-                            <div class="project-banner-icon">💬</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Real-Time Chat Application</h3>
-                        <p class="project-description">Secure messaging app with end-to-end encryption, group chats,
-                            media sharing, voice messages, and real-time online status indicators.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">WebSocket</span>
-                            <span class="tech-tag">Encryption</span>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
