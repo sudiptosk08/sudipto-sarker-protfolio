@@ -257,30 +257,23 @@
 
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
             gap: 2.5rem;
             align-items: center;
 
         }
 
         .about-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
+            width: 660px;
+            height: 850px;
             background: #dbfce7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            animation: pulse 2s infinite;
-            overflow: hidden;
+
         }
 
         .about-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+            object-fit: fill;
         }
 
         @keyframes pulse {
@@ -301,6 +294,7 @@
             font-size: 1.2rem;
             line-height: 1.6;
             padding: 120px 0px;
+            text-align: justify;
             color: var(--text-weak);
         }
 
@@ -713,11 +707,9 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About Me With Flutter RoadMap</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="./assets/images/profile.jpg" alt="Sudipto Sarker Profile">
-                </div>
+
 
                 <div class="about-text">
                     <p>I am a Flutter Developer with 4 years of professional experience in designing and developing
@@ -741,6 +733,9 @@
                         Flutter updates to stay ahead in the ever-evolving mobile development landscape..</p>
                 </div>
                 <!-- <a href="#contact" class="cta-button">Let's Work Together</a> -->
+                <div class="about-image">
+                    <img src="./assets/images/roadmap.jpg" alt="Sudipto Sarker Profile">
+                </div>
             </div>
         </div>
     </section>
