@@ -202,7 +202,76 @@
             border-radius: 30px;
             font-weight: bold;
             transition: all 0.3s ease;
+        }
 
+        .store-buttons {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: space-between;
+            margin-top: 0.1rem;
+            margin-bottom: 1.2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        .store-button {
+            padding: 0px 20px;
+            background: transparent;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 3px solid #636870;
+            border-radius: 8px;
+        }
+
+        .store-button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .store-button img {
+            width: 120px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 3px;
+            display: block;
+        }
+
+
+
+        .store-button.coding-button {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border: 3px solid #636870;
+        }
+
+        .store-button.coding-button img {
+            width: 32px;
+            height: 26px;
+            border-radius: 4px;
+        }
+
+        .coding-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .coding-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #080808;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .coding-subtitle {
+            font-size: 0.5rem;
+            color: #080808;
+            margin: 0;
+            line-height: 1.2;
         }
 
         .cta-button:hover {
@@ -867,6 +936,24 @@
                         <span class="tech-tag">in_app_review</span>
                         <span class="tech-tag">expandable_widgets</span>
                     </div>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.photocollagesocial" target="_blank"
+                            class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/ca/app/photo-collage-maker-pic-frame/id1586019017"
+                            target="_blank" class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://www.linkedin.com/in/sudipto-sarker-000301165/"
+                            class="store-button coding-button">
+                            <img src="./assets/images/linkedin.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Connect with me</h4>
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
                 <div class="project-card">
@@ -892,13 +979,67 @@
                         <span class="tech-tag">chat_bubbles</span>
                         <span class="tech-tag">downloadsfolder</span>
                     </div>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
+                            class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                            class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://www.linkedin.com/in/sudipto-sarker-000301165/"
+                            class="store-button coding-button">
+                            <img src="./assets/images/linkedin.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Connect with me</h4>
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
+
                 <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/document-scanner.jpg');">
-                        <div class="project-banner project-banner--autoHeight">
-                            <img src="./assets/images/pdf_document_scanner.png" alt="Tex Bazar banner">
-                        </div>
+                    <div class="project-banner project-banner--autoHeight">
+                        <img src="./assets/images/pdf_converter_banner.png" alt="Tex Bazar banner">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PDF Converter: Scanner & Maker</h3>
+                        <p class="project-description">Image to PDF Converter & PDF editor is a smart tool that makes
+                            converting documents to PDF fast and easy. Convert Word
+                            to PDF, images to PDF, or JPG to PDF, with ease, this file converter simplifies your
+                            everyday life. You can also scan
+                            documents, edit, and convert
+                            to PDF easily.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">mobile_scanner</span>
+                        <span class="tech-tag">aspose_words_cloud</span>
+                        <span class="tech-tag">pdf_merge</span>
+                        <span class="tech-tag">isar_database</span>
+                    </div>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
+                            class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                            class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://web.facebook.com/sudipto.sarker.756" class="store-button coding-button">
+                            <img src="./assets/images/facebook.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Connect with me</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-banner project-banner--autoHeight">
+                        <img src="./assets/images/pdf_document_scanner.png" alt="Tex Bazar banner">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">PDF Scanner & Scan Document</h3>
@@ -918,45 +1059,26 @@
                         <span class="tech-tag">visiting_card_scanner</span>
                         <span class="tech-tag">page_filtering</span>
                     </div>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.pdfscanner.scandocuments.docsign"
+                            target="_blank" class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/ca/app/pdf-scanner-scan-documents/id6739449063" target=" _blank"
+                            class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://web.facebook.com/sudipto.sarker.756" class="store-button coding-button">
+                            <img src="./assets/images/facebook.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Connect with me</h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-banner project-banner--autoHeight">
-                        <img src="./assets/images/pdf_converter_banner.png" alt="Tex Bazar banner">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">PDF Converter: Scanner & Maker</h3>
-                        <p class="project-description">Image to PDF Converter & PDF editor is a smart tool that makes
-                            converting documents to PDF fast and easy. Convert Word
-                            to PDF, images to PDF, or JPG to PDF, with ease, this file converter simplifies your
-                            everyday life. You can also scan
-                            documents, edit, and convert
-                            to PDF easily.</p>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">mobile_scanner</span>
-                        <span class="tech-tag">aspose_words_cloud</span>
-                        <span class="tech-tag">pdf_merge</span>
-                        <span class="tech-tag">isar_database</span>
 
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner" style="background-image: url('./assets/images/document-scanner.jpg');">
-                        <div class="project-banner project-banner--autoHeight">
-                            <img src="./assets/images/bookem_banner.png" alt="Tex Bazar banner">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Book3m Multi Vendor</h3>
-                        <p class="project-description">Bookem Customer App connects users with service providers for
-                            easy booking and appointment management. Customers can
-                            browse vendors by category, view profiles with details, and book directly. The app supports
-                            tracking, rescheduling, and
-                            cancellations with automatic updates.Core functionality enables customers to book
-                            appointments directly with vendors, track appointment status, cancel or
-                            rebook appointments .</p>
-                    </div>
-                </div>
+
                 <div class="project-card">
                     <div class="project-banner project-banner--autoHeight">
                         <img src="./assets/images/qrcode_barcode_banner.png" alt="Tex Bazar banner">
@@ -975,7 +1097,56 @@
                         <span class="tech-tag">pretty_qr_code</span>
                         <span class="tech-tag">Barcode Generator</span>
                         <span class="tech-tag">QR Code Generator</span>
+                    </div>
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
+                            class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                            class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://github.com/sudiptosk08" class="store-button coding-button">
+                            <img src="./assets/images/coding.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Connect with me</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-banner project-banner--autoHeight">
+                        <img src="./assets/images/bookem_banner.png" alt="Tex Bazar banner">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Book3m Multi Vendor</h3>
+                        <p class="project-description">Bookem Customer App connects users with service providers for
+                            easy booking and appointment management. Customers can
+                            browse vendors by category, view profiles with details, and book directly. The app supports
+                            tracking, rescheduling, and
+                            cancellations with automatic updates.Core functionality enables customers to book
+                            appointments directly with vendors, track appointment status, cancel or
+                            rebook appointments .</p>
+                    </div>
 
+                    <div class="store-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
+                            class="store-button app-store">
+                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                            class="store-button ">
+                            <img src="./assets/images/appStore.png" alt="App Store">
+                        </a>
+                        <a href="https://github.com/sudiptosk08" class="store-button coding-button">
+                            <img src="./assets/images/github-logo.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Get code</p>
+                                <h4 class="coding-title">Github Link</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="project-card">
