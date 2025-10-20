@@ -219,7 +219,7 @@
             background: transparent;
             text-decoration: none;
             transition: all 0.3s ease;
-            border: 3px solid #636870;
+            border: 3px solid #a8aaac;
             border-radius: 8px;
         }
 
@@ -244,7 +244,7 @@
             gap: 0.75rem;
             padding: 8px 12px;
             background: #f8f9fa;
-            border: 3px solid #636870;
+            border: 3px solid #a8aaac;
         }
 
         .store-button.coding-button img {
@@ -741,6 +741,468 @@
             left: 20%;
             animation-delay: 10s;
         }
+
+        /* Contact Section Styles */
+        .contact-section {
+            margin-top: 0;
+        }
+
+        .contact-header {
+            background: #1a1a2e;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-main-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .contact-subtitle {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .email-me-button {
+            display: inline-block;
+            padding: 25px 45px;
+            background: #ffffff;
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid #1a1a2e;
+            transition: all 0.3s ease;
+            margin: 10px auto;
+        }
+
+        .email-me-button:hover {
+            background: #b3b3b3;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(26, 26, 46, 0.2);
+        }
+
+        .all-projects-button {
+            display: block;
+            padding: 20px 70px;
+            background: #1a1a2e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid #1a1a2e;
+            transition: all 0.3s ease;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .all-projects-button:hover {
+            background: transparent;
+            color: #1a1a2e;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(26, 26, 46, 0.2);
+        }
+
+        .contact-footer {
+            background: #ffffff;
+            padding: 60px 0 30px 0;
+        }
+
+        .contact-footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Personal Info Column */
+        .contact-personal {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f0f0f0;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-tagline {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .availability-dot {
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+        }
+
+        .availability-text {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: #364153;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 8px;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(54, 65, 83, 0.3);
+            background: #4a5568;
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .social-icon.linkedin img,
+        .social-icon.whatsapp img {
+            filter: none;
+        }
+
+        .social-icon.github img {
+            filter: brightness(0) invert(1);
+        }
+
+        .social-icon.upwork img {
+            filter: none;
+        }
+
+        /* Upwork Alert Dialog */
+        .upwork-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            z-index: 10000;
+            opacity: 0;
+            transition: all 0.3s ease;
+            min-width: 280px;
+            max-width: 400px;
+        }
+
+        .upwork-alert.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .upwork-alert.hide {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+
+        .alert-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+
+        .alert-icon {
+            font-size: 2rem;
+            background: #364153;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .alert-text h4 {
+            margin: 0 0 0.5rem 0;
+            color: #1a1a2e;
+            font-size: 1.2rem;
+        }
+
+        .alert-text p {
+            margin: 0;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* View All Works Alert Dialog */
+        .view-all-works-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            z-index: 10000;
+            opacity: 0;
+            transition: all 0.3s ease;
+            min-width: 280px;
+            max-width: 400px;
+        }
+
+        .view-all-works-alert.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .view-all-works-alert.hide {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+
+        /* Navigation Column */
+        .contact-navigation {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links-list li {
+            margin-bottom: 1rem;
+        }
+
+        .nav-links-list a {
+            color: #666;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links-list a::before {
+            content: "→";
+            font-size: 0.6rem;
+            color: #666;
+        }
+
+        .nav-links-list a:hover {
+            color: #4ade80;
+        }
+
+        /* Contact Info Column */
+        .contact-info-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-detail-icon {
+            width: 40px;
+            height: 40px;
+            background: #364153;
+            color: #ffffff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .contact-detail-label {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .contact-detail-value {
+            font-size: 1rem;
+            color: #1a1a2e;
+            font-weight: 500;
+        }
+
+        /* Bottom Footer */
+        .contact-bottom-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .heart-icon {
+            color: #ff6b6b;
+            font-size: 1.2rem;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .site-credit {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .back-to-top {
+            background: #1a1a2e;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: #2a2a3e;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-main-title {
+                font-size: 2.5rem;
+            }
+
+            .contact-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .contact-footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .contact-bottom-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-right {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -946,7 +1408,7 @@
                             <img src="./assets/images/appStore.png" alt="App Store">
                         </a>
                         <a href="https://www.linkedin.com/in/sudipto-sarker-000301165/"
-                            class="store-button coding-button">
+                            class="store-button coding-button" target="_blank">
                             <img src="./assets/images/linkedin.png" alt="Coding">
                             <div class="coding-text">
                                 <p class="coding-subtitle">Made your code</p>
@@ -989,7 +1451,7 @@
                             <img src="./assets/images/appStore.png" alt="App Store">
                         </a>
                         <a href="https://www.linkedin.com/in/sudipto-sarker-000301165/"
-                            class="store-button coding-button">
+                            class="store-button coding-button" target="_blank">
                             <img src="./assets/images/linkedin.png" alt="Coding">
                             <div class="coding-text">
                                 <p class="coding-subtitle">Made your code</p>
@@ -1020,19 +1482,20 @@
                         <span class="tech-tag">isar_database</span>
                     </div>
                     <div class="store-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
-                            class="store-button app-store">
+                        <a href="https://play.google.com/store/apps/details?id=com.pdfconverter.jpgtopdf.imagetopdf.pdfmaker"
+                            target="_blank" class="store-button app-store">
                             <img src="./assets/images/googleplay.png" alt="Google Play Store">
                         </a>
-                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                        <a href="https://apps.apple.com/ca/app/pdf-converter-maker-editor/id6472611450" target=" _blank"
                             class="store-button ">
                             <img src="./assets/images/appStore.png" alt="App Store">
                         </a>
-                        <a href="https://web.facebook.com/sudipto.sarker.756" class="store-button coding-button">
-                            <img src="./assets/images/facebook.png" alt="Coding">
+                        <a href="https://wa.me/8801758039342" id="whatsapp-link" class="store-button coding-button"
+                            target="_blank">
+                            <img src="./assets/images/whatsapp.png" alt="Coding">
                             <div class="coding-text">
                                 <p class="coding-subtitle">Made your code</p>
-                                <h4 class="coding-title">Connect with me</h4>
+                                <h4 class="coding-title">Contact with me</h4>
                             </div>
                         </a>
                     </div>
@@ -1068,13 +1531,15 @@
                             class="store-button ">
                             <img src="./assets/images/appStore.png" alt="App Store">
                         </a>
-                        <a href="https://web.facebook.com/sudipto.sarker.756" class="store-button coding-button">
-                            <img src="./assets/images/facebook.png" alt="Coding">
+                        <a href="https://wa.me/8801758039342" id="whatsapp-link" class="store-button coding-button"
+                            target="_blank">
+                            <img src="./assets/images/whatsapp.png" alt="Coding">
                             <div class="coding-text">
                                 <p class="coding-subtitle">Made your code</p>
-                                <h4 class="coding-title">Connect with me</h4>
+                                <h4 class="coding-title">Contact with me</h4>
                             </div>
                         </a>
+
                     </div>
                 </div>
 
@@ -1099,11 +1564,11 @@
                         <span class="tech-tag">QR Code Generator</span>
                     </div>
                     <div class="store-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
-                            class="store-button app-store">
+                        <a href="https://play.google.com/store/apps/details?id=com.qr.code.reader.qrscan.barcode.scanner"
+                            target="_blank" class="store-button app-store">
                             <img src="./assets/images/googleplay.png" alt="Google Play Store">
                         </a>
-                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
+                        <a href="https://apps.apple.com/ca/app/qr-code-generator-creator/id6471344894" target=" _blank"
                             class="store-button ">
                             <img src="./assets/images/appStore.png" alt="App Store">
                         </a>
@@ -1132,24 +1597,25 @@
                     </div>
 
                     <div class="store-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=xyz.texbazar.app&hl=en" target="_blank"
-                            class="store-button app-store">
-                            <img src="./assets/images/googleplay.png" alt="Google Play Store">
-                        </a>
-                        <a href="https://apps.apple.com/us/app/tex-bazar/id6740398719" target=" _blank"
-                            class="store-button ">
-                            <img src="./assets/images/appStore.png" alt="App Store">
-                        </a>
                         <a href="https://github.com/sudiptosk08" class="store-button coding-button">
                             <img src="./assets/images/github-logo.png" alt="Coding">
                             <div class="coding-text">
                                 <p class="coding-subtitle">Get code</p>
-                                <h4 class="coding-title">Github Link</h4>
+                                <h4 class="coding-title">Github Repository</h4>
                             </div>
                         </a>
+                        <a href="https://wa.me/8801758039342" id="whatsapp-link" class="store-button coding-button"
+                            target="_blank">
+                            <img src="./assets/images/whatsapp.png" alt="Coding">
+                            <div class="coding-text">
+                                <p class="coding-subtitle">Made your code</p>
+                                <h4 class="coding-title">Contact with me</h4>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="project-banner" style="background-image: url('./assets/images/abedok-job.jpg');">
                         <div class="project-banner-overlay">
                             <div class="project-banner-icon">💼</div>
@@ -1160,9 +1626,9 @@
                         <p class="project-description">Job application platform with filtered circular search, one-tap
                             application, exam center redirection, and instant result notifications.</p>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="project-card">
+                <!-- <div class="project-card">
                     <div class="project-banner" style="background-image: url('./assets/images/food-delivery.jpg');">
                         <div class="project-banner-overlay">
                             <div class="project-banner-icon">🍕</div>
@@ -1173,46 +1639,104 @@
                         <p class="project-description">Complete food delivery platform with restaurant listings,
                             real-time order tracking, payment integration, and customer reviews system.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
+
         </div>
+        <a href="#" class="all-projects-button" onclick="showViewAllWorksAlert(event)">View All Works →</a>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                    Ready to bring your mobile app ideas to life? Let's discuss your next project!
-                </p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <h3>Phone</h3>
-                        <p>01758039342</p>
+    <section id="contact" class="contact-section">
+        <!-- Dark Blue Header -->
+        <div class="contact-header">
+            <div class="container">
+                <h2 class="contact-main-title">Let's Build Something Meaningful</h2>
+                <p class="contact-subtitle">Ready to collaborate or have a project in mind?</p>
+                <a href="mailto:sudiptosarker05@gmail.com" class="email-me-button">Email Me</a>
+            </div>
+        </div>
+
+        <!-- White Footer -->
+        <div class="contact-footer">
+            <div class="container">
+                <div class="contact-footer-content">
+                    <!-- Left Column - Personal Info -->
+                    <div class="contact-personal">
+                        <div class="profile-section">
+                            <img src="./assets/images/profile.jpg" alt="Sudipto Sarker" class="profile-image">
+                            <div class="profile-info">
+                                <h3 class="profile-name">SUDIPTO SARKER</h3>
+                                <p class="profile-title">Sr. Flutter Developer</p>
+                                <p class="profile-tagline">Building Mobile Apps, Shaping Lives...</p>
+                                <div class="availability">
+                                    <span class="availability-dot"></span>
+                                    <span class="availability-text">Available for projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sudipto-sarker-000301165/" class="social-icon linkedin"
+                                target="_blank">
+                                <img src="./assets/images/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://wa.me/8801758039342" class="social-icon whatsapp" target="_blank">
+                                <img src="./assets/images/whatsapp.png" alt="WhatsApp">
+                            </a>
+                            <a href="https://github.com/sudiptosk08" class="social-icon github" target="_blank">
+                                <img src="./assets/images/github-logo.png" alt="GitHub">
+                            </a>
+                            <a href="#" class="social-icon upwork" onclick="showUpworkAlert(event)">
+                                <img src="./assets/images/upwork.png" alt="upwork">
+                            </a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>sudiptosarker05@gmail.com</p>
+
+                    <!-- Middle Column - Navigation -->
+                    <div class="contact-navigation">
+                        <h4 class="nav-title">Navigation</h4>
+                        <ul class="nav-links-list">
+                            <li><a href="#projects">My Works</a></li>
+                            <!-- <li><a href="#about">Case S</a></li> -->
+                            <li><a href="#" onclick="window.open('./assets/resume.pdf', '_blank')">Resume</a></li>
+                        </ul>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>Nikunjo 2, Dhaka, Bangladesh</p>
+
+                    <!-- Right Column - Contact Info -->
+                    <div class="contact-info-column">
+                        <h4 class="contact-title">Contact</h4>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">✉</div>
+                                <div class="contact-detail-text">
+                                    <span class="contact-detail-label">Email</span>
+                                    <span class="contact-detail-value">sudiptosarker05@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">📍</div>
+                                <div class="contact-detail-text">
+                                    <span class="contact-detail-label">Location</span>
+                                    <span class="contact-detail-value">Dhaka, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🔗</div>
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/sudipto-sarker-000301165/"
-                                style="color: #080808;">Connect with me</a></p>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="contact-bottom-footer">
+                    <div class="footer-left">
+                        <span class="heart-icon">♥</span>
+                        <span class="copyright">© 2025 Sudipto Sarker. All Rights Reserved.</span>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🐙</div>
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/sudiptosk08" style="color: #080808;">View my code</a></p>
+                    <div class="footer-right">
+                        <span class="site-credit">Site Developed by Sudipto</span>
+                        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                            Back to Top ↑
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1284,6 +1808,96 @@
             currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
             applyTheme(currentTheme);
         });
+
+        // WhatsApp conditional link - simplified approach
+        function setWhatsAppLink() {
+            const whatsappLink = document.getElementById('whatsapp-link');
+
+            if (whatsappLink) {
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                if (!isMobile) {
+                    // Use web.whatsapp.com for desktop (opens WhatsApp Web)
+                    whatsappLink.href = 'https://web.whatsapp.com/send?phone=8801758039342';
+                }
+                // Mobile devices will use the default wa.me link already set in HTML
+            }
+        }
+
+        // Set the WhatsApp link when page loads
+        window.addEventListener('load', setWhatsAppLink);
+
+        // Upwork alert function
+        function showUpworkAlert(event) {
+            event.preventDefault();
+
+            // Create alert dialog
+            const alertDialog = document.createElement('div');
+            alertDialog.className = 'upwork-alert';
+            alertDialog.innerHTML = `
+                <div class="alert-content">
+                    <div class="alert-icon">💼</div>
+                    <div class="alert-text">
+                        <h4>Upwork Profile</h4>
+                        <p>Coming Soon!</p>
+                    </div>
+                </div>
+            `;
+
+            // Add to body
+            document.body.appendChild(alertDialog);
+
+            // Show alert with animation
+            setTimeout(() => {
+                alertDialog.classList.add('show');
+            }, 10);
+
+            // Hide alert after 2 seconds
+            setTimeout(() => {
+                alertDialog.classList.add('hide');
+                setTimeout(() => {
+                    if (document.body.contains(alertDialog)) {
+                        document.body.removeChild(alertDialog);
+                    }
+                }, 300);
+            }, 2000);
+        }
+
+        // View All Works alert function
+        function showViewAllWorksAlert(event) {
+            event.preventDefault();
+
+            // Create alert dialog
+            const alertDialog = document.createElement('div');
+            alertDialog.className = 'view-all-works-alert';
+            alertDialog.innerHTML = `
+                <div class="alert-content">
+                    <div class="alert-icon">🚀</div>
+                    <div class="alert-text">
+                        <h4>All Works</h4>
+                        <p>Portfolio coming soon!</p>
+                    </div>
+                </div>
+            `;
+
+            // Add to body
+            document.body.appendChild(alertDialog);
+
+            // Show alert with animation
+            setTimeout(() => {
+                alertDialog.classList.add('show');
+            }, 10);
+
+            // Hide alert after 2 seconds
+            setTimeout(() => {
+                alertDialog.classList.add('hide');
+                setTimeout(() => {
+                    if (document.body.contains(alertDialog)) {
+                        document.body.removeChild(alertDialog);
+                    }
+                }, 300);
+            }, 2000);
+        }
     </script>
 </body>
 
