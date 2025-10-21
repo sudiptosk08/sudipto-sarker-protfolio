@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Sudipto Sarker - Flutter Developer</title>
     <style>
         * {
@@ -25,6 +25,40 @@
             --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.08);
             --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.15);
             --overlay-grad: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35));
+
+            /* Light mode specific colors */
+            --logo-gradient: #080808;
+            --hero-title-gradient: #080808;
+            --hero-subtitle: #364153;
+            --cta-bg: #dbfce7;
+            --cta-color: #489354;
+            --cta-hover-bg: #bbf7d0;
+            --section-title-bg: #080808;
+            --skill-card-bg: #f0fdf4;
+            --skill-card-border: #f0f0f0;
+            --skill-card-hover-border: #288b4c;
+            --experience-card-bg: #f3f4f6;
+            --experience-company: #054fef;
+            --tech-tag-bg: #f3f4f6;
+            --tech-tag-color: #161a23;
+            --contact-header-bg: #1a1a2e;
+            --contact-main-title: #ffffff;
+            --contact-subtitle: #ffffff;
+            --email-button-bg: #ffffff;
+            --email-button-color: #1a1a2e;
+            --email-button-hover-bg: #b3b3b3;
+            --profile-name: #1a1a2e;
+            --profile-title: #666;
+            --profile-tagline: #888;
+            --availability-dot: #4ade80;
+            --social-icon-bg: #364153;
+            --social-icon-hover-bg: #4a5568;
+            --contact-detail-icon-bg: #364153;
+            --contact-detail-label: #666;
+            --contact-detail-value: #1a1a2e;
+            --footer-text: #666;
+            --back-to-top-bg: #1a1a2e;
+            --back-to-top-hover-bg: #2a2a3e;
         }
 
         [data-theme="dark"] {
@@ -40,6 +74,74 @@
             --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.4);
             --shadow-md: 0 20px 50px rgba(0, 0, 0, 0.6);
             --overlay-grad: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6));
+
+            /* Dark mode specific colors */
+            --logo-gradient: #ffffff;
+            --hero-title-gradient: #ffffff;
+            --hero-subtitle: #b3b3b3;
+            --cta-bg: #2d3748;
+            --cta-color: #68d391;
+            --cta-hover-bg: #4a5568;
+            --section-title-bg: #ffffff;
+            --skill-card-bg: #2d3748;
+            --skill-card-border: #4a5568;
+            --skill-card-hover-border: #68d391;
+            --experience-card-bg: #2d3748;
+            --experience-company: #68d391;
+            --tech-tag-bg: #4a5568;
+            --tech-tag-color: #ffffff;
+            --contact-header-bg: #1a202c;
+            --contact-main-title: #ffffff;
+            --contact-subtitle: #b3b3b3;
+            --email-button-bg: #ffffff;
+            --email-button-color: #1a202c;
+            --email-button-hover-bg: #e2e8f0;
+            --profile-name: #ffffff;
+            --profile-title: #b3b3b3;
+            --profile-tagline: #a0aec0;
+            --availability-dot: #68d391;
+            --social-icon-bg: #4a5568;
+            --social-icon-hover-bg: #68d391;
+            --contact-detail-icon-bg: #4a5568;
+            --contact-detail-label: #b3b3b3;
+            --contact-detail-value: #ffffff;
+            --footer-text: #b3b3b3;
+            --back-to-top-bg: #4a5568;
+            --back-to-top-hover-bg: #68d391;
+        }
+
+        /* Dark mode specific overrides for section titles */
+        [data-theme="dark"] #about .section-title {
+            background: #080808 !important;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+        }
+
+        [data-theme="dark"] #experience .section-title {
+            background: #080808 !important;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+        }
+
+        /* Dark mode store button styling */
+        [data-theme="dark"] .store-button {
+            background: #ffffff !important;
+            border: 3px solid #ffffff !important;
+        }
+
+        [data-theme="dark"] .store-button:hover {
+            background: #f0f0f0 !important;
+            border: 3px solid #f0f0f0 !important;
+        }
+
+        [data-theme="dark"] .store-button.coding-button {
+            background: #ffffff !important;
+            border: 3px solid #ffffff !important;
+        }
+
+        [data-theme="dark"] .store-button.coding-button:hover {
+            background: #f0f0f0 !important;
+            border: 3px solid #f0f0f0 !important;
         }
 
         body {
@@ -47,6 +149,8 @@
             background: var(--bg);
             color: var(--text);
             overflow-x: hidden;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .container {
@@ -77,7 +181,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            background: #080808;
+            background: var(--logo-gradient);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -168,7 +272,7 @@
         .hero h1 {
             font-size: 6rem;
             margin-bottom: 1rem;
-            background: #080808;
+            background: var(--hero-title-gradient);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -189,19 +293,23 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            color: #364153;
+            color: var(--hero-subtitle);
         }
 
         .cta-button {
-            display: inline-block;
+            display: inline-flex;
             padding: 15px 30px;
-            background: #dbfce7;
-            color: #489354;
+            background: var(--cta-bg);
+            color: var(--cta-color);
             text-decoration: center;
             text-align: center;
             border-radius: 30px;
             font-weight: bold;
             transition: all 0.3s ease;
+            min-height: 44px;
+            min-width: 44px;
+            align-items: center;
+            justify-content: center;
         }
 
         .store-buttons {
@@ -221,6 +329,11 @@
             transition: all 0.3s ease;
             border: 3px solid #a8aaac;
             border-radius: 8px;
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .store-button:hover {
@@ -277,6 +390,7 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            background: var(--cta-hover-bg);
         }
 
         /* Sections */
@@ -298,10 +412,7 @@
             text-align: center;
             font-size: 3rem;
             margin-bottom: 6rem;
-            background: #080808;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--text-strong);
         }
 
         /* About Section */
@@ -379,10 +490,10 @@
         }
 
         .skill-card {
-            background: #f0fdf4;
+            background: var(--skill-card-bg);
             padding: 2rem 1.2rem;
             border-radius: 15px;
-            border: 2px solid var(--card-border);
+            border: 2px solid var(--skill-card-border);
             transition: all 0.3s ease;
             text-align: center;
             box-shadow: var(--shadow-sm);
@@ -391,7 +502,7 @@
         .skill-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-md);
-            border-color: #288b4c;
+            border-color: var(--skill-card-hover-border);
         }
 
         .skill-icon {
@@ -470,15 +581,14 @@
         }
 
         .experience-content {
-            background: #f3f4f6;
+            background: var(--experience-card-bg);
             padding: 2rem;
-
             border: 2px solid var(--card-border);
             box-shadow: var(--shadow-sm);
         }
 
         .experience-date {
-            color: #080808;
+            color: var(--text-strong);
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
@@ -490,7 +600,7 @@
         }
 
         .experience-company {
-            color: #054fef;
+            color: var(--experience-company);
             margin-bottom: 1rem;
         }
 
@@ -600,12 +710,11 @@
         }
 
         .tech-tag {
-            background: #f3f4f6;
-            color: var(--text-strong);
+            background: var(--tech-tag-bg);
+            color: var(--tech-tag-color);
             padding: 0.3rem 0.8rem;
             border-radius: 15px;
             font-size: 0.8rem;
-            color: #161a23;
         }
 
         /* Contact Section */
@@ -676,25 +785,161 @@
             transform: translateY(-1px);
         }
 
-        /* Responsive */
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text);
+            cursor: pointer;
+            z-index: 1001;
+            padding: 8px;
+            min-width: 44px;
+            min-height: 44px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: var(--bg);
+            z-index: 1000;
+            transition: left 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-menu .nav-links a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-menu .nav-links a:hover {
+            color: var(--text-strong);
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        /* Responsive Breakpoints */
+
+        /* Mobile First - Base styles for mobile (320px - 768px) */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            /* Navigation */
             .nav-links {
                 display: none;
             }
 
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            /* Header */
+            nav {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 0 1rem;
+            }
+
+            .hero-content {
+                margin-bottom: 150px;
+                margin-top: 50px;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
+                line-height: 1.2;
             }
 
             .hero p {
                 font-size: 1.2rem;
+                margin-bottom: 0.5rem;
             }
 
+            .hero p:last-child {
+                font-size: 1rem;
+            }
+
+            .profile-gif {
+                width: 150px;
+            }
+
+            /* About Section */
             .about-content {
                 grid-template-columns: 1fr;
+                gap: 2rem;
                 text-align: center;
             }
 
+            .about-image {
+                width: 100%;
+                height: 300px;
+                margin: 0;
+                order: -1;
+            }
+
+            .about-text {
+                padding: 20px 0;
+                font-size: 1rem;
+            }
+
+            /* Skills Section */
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-bottom: 40px;
+            }
+
+            .skill-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .skill-icon {
+                font-size: 2.5rem;
+            }
+
+            /* Experience Section */
             .experience-timeline::before {
                 left: 20px;
             }
@@ -703,16 +948,418 @@
             .experience-item:nth-child(even) .experience-content {
                 margin-left: 60px;
                 margin-right: 0;
-                padding-left: 2rem;
-                padding-right: 1rem;
+                padding: 1.5rem;
+                width: calc(100% - 80px);
             }
 
+            .experience-content {
+                padding: 1.5rem;
+            }
+
+            .experience-title {
+                font-size: 1.1rem;
+            }
+
+            /* Projects Section */
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .project-banner {
+                height: 200px;
+            }
+
+            .store-buttons {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin: 1rem;
+            }
+
+            .store-button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .store-button img {
+                width: 100px;
+                height: 35px;
+            }
+
+            .store-button.coding-button {
+                padding: 10px 15px;
+            }
+
+            .coding-text {
+                align-items: center;
+            }
+
+            .coding-title {
+                font-size: 0.8rem;
+            }
+
+            .coding-subtitle {
+                font-size: 0.45rem;
+            }
+
+            /* Contact Section */
+            .contact-main-title {
+                font-size: 2.5rem;
+            }
+
+            .contact-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .email-me-button {
+                padding: 20px 35px;
+                font-size: 1rem;
+            }
+
+            .contact-footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .contact-bottom-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-right {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            /* Section Titles */
             .section-title {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            #about .section-title,
+            #experience .section-title {
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+        }
+
+        /* Tablet Styles (768px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            /* Navigation */
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+            }
+
+            /* Hero Section */
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .hero p {
                 font-size: 2rem;
             }
 
+            .profile-gif {
+                width: 180px;
+            }
+
+            /* About Section */
+            .about-content {
+                gap: 2rem;
+            }
+
+            .about-image {
+                width: 100%;
+                height: 400px;
+                margin: 0;
+            }
+
+            .about-text {
+                padding: 40px 0;
+                font-size: 1.1rem;
+            }
+
+            /* Skills Section */
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            /* Experience Section */
+            .experience-item:nth-child(odd) .experience-content {
+                width: 400px;
+            }
+
+            .experience-item:nth-child(even) .experience-content {
+                width: 400px;
+            }
+
+            /* Projects Section */
             .projects-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .store-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .store-button {
+                flex: 1;
+                min-width: 120px;
+            }
+
+            /* Contact Section */
+            .contact-main-title {
+                font-size: 3rem;
+            }
+
+            .contact-footer-content {
+                grid-template-columns: 2fr 1fr;
+                gap: 3rem;
+            }
+
+            /* Section Titles */
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Desktop Styles (1024px+) */
+        @media (min-width: 1025px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            /* Hero Section */
+            .hero h1 {
+                font-size: 6rem;
+            }
+
+            .hero p {
+                font-size: 3rem;
+            }
+
+            .profile-gif {
+                width: 200px;
+            }
+
+            /* About Section */
+            .about-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+
+            .about-image {
+                width: 660px;
+                height: 900px;
+                margin-left: 60px;
+                margin-top: 60px;
+            }
+
+            .about-text {
+                padding: 120px 0;
+                font-size: 1.1rem;
+            }
+
+            /* Skills Section */
+            .skills-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+            }
+
+            /* Experience Section */
+            .experience-item:nth-child(odd) .experience-content {
+                width: 450px;
+            }
+
+            .experience-item:nth-child(even) .experience-content {
+                width: 450px;
+            }
+
+            /* Projects Section */
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .store-buttons {
+                flex-direction: row;
+                gap: 0.5rem;
+            }
+
+            /* Contact Section */
+            .contact-main-title {
+                font-size: 3.5rem;
+            }
+
+            .contact-footer-content {
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 4rem;
+            }
+
+            /* Section Titles */
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+
+        /* Large Desktop (1440px+) */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1400px;
+                padding: 0 3rem;
+            }
+
+            .hero h1 {
+                font-size: 7rem;
+            }
+
+            .hero p {
+                font-size: 3.5rem;
+            }
+
+            .profile-gif {
+                width: 220px;
+            }
+
+            .section-title {
+                font-size: 3.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+        }
+
+        /* Extra Small Mobile (320px - 480px) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero p:last-child {
+                font-size: 0.9rem;
+            }
+
+            .profile-gif {
+                width: 120px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .skill-card {
+                padding: 1rem 0.8rem;
+            }
+
+            .skill-icon {
+                font-size: 2rem;
+            }
+
+            .experience-content {
+                padding: 1rem;
+            }
+
+            .project-content {
+                padding: 0.8rem;
+            }
+
+            .store-button img {
+                width: 80px;
+                height: 30px;
+            }
+
+            .contact-main-title {
+                font-size: 2rem;
+            }
+
+            .contact-subtitle {
+                font-size: 1rem;
+            }
+
+            .email-me-button {
+                padding: 15px 25px;
+                font-size: 0.9rem;
+            }
+
+            /* Improve touch targets for very small screens */
+            .mobile-menu-toggle {
+                min-width: 48px;
+                min-height: 48px;
+            }
+
+            .theme-toggle {
+                min-width: 48px;
+                min-height: 48px;
+            }
+
+            .store-button {
+                min-height: 48px;
+                padding: 8px 16px;
+            }
+        }
+
+        /* Landscape Mobile (480px - 768px) */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero {
+                height: auto;
+                min-height: 100vh;
+                padding: 2rem 0;
+            }
+
+            .hero-content {
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+
+            .profile-gif {
+                width: 100px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
             }
         }
 
@@ -748,7 +1395,7 @@
         }
 
         .contact-header {
-            background: #1a1a2e;
+            background: var(--contact-header-bg);
             padding: 50px 0;
             text-align: center;
         }
@@ -756,14 +1403,14 @@
         .contact-main-title {
             font-size: 3.5rem;
             font-weight: bold;
-            color: #ffffff;
+            color: var(--contact-main-title);
             margin-bottom: 1rem;
             line-height: 1.2;
         }
 
         .contact-subtitle {
             font-size: 1.3rem;
-            color: #ffffff;
+            color: var(--contact-subtitle);
             margin-bottom: 2.5rem;
             opacity: 0.9;
         }
@@ -771,20 +1418,20 @@
         .email-me-button {
             display: inline-block;
             padding: 25px 45px;
-            background: #ffffff;
-            color: #1a1a2e;
+            background: var(--email-button-bg);
+            color: var(--email-button-color);
             text-decoration: none;
             border-radius: 35px;
             font-weight: bold;
             font-size: 1.1rem;
-            border: 2px solid #1a1a2e;
+            border: 2px solid var(--contact-header-bg);
             transition: all 0.3s ease;
             margin: 10px auto;
         }
 
         .email-me-button:hover {
-            background: #b3b3b3;
-            color: #ffffff;
+            background: var(--email-button-hover-bg);
+            color: var(--contact-header-bg);
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(26, 26, 46, 0.2);
         }
@@ -792,13 +1439,13 @@
         .all-projects-button {
             display: block;
             padding: 20px 70px;
-            background: #1a1a2e;
-            color: #ffffff;
+            background: var(--contact-header-bg);
+            color: var(--contact-main-title);
             text-decoration: none;
             border-radius: 7px;
             font-weight: bold;
             font-size: 1.1rem;
-            border: 2px solid #1a1a2e;
+            border: 2px solid var(--contact-header-bg);
             transition: all 0.3s ease;
             margin-top: 50px;
             margin-bottom: 20px;
@@ -810,13 +1457,13 @@
 
         .all-projects-button:hover {
             background: transparent;
-            color: #1a1a2e;
+            color: var(--contact-header-bg);
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(26, 26, 46, 0.2);
         }
 
         .contact-footer {
-            background: #ffffff;
+            background: var(--bg);
             padding: 60px 0 30px 0;
         }
 
@@ -855,20 +1502,20 @@
         .profile-name {
             font-size: 1.4rem;
             font-weight: bold;
-            color: #1a1a2e;
+            color: var(--profile-name);
             margin-bottom: 0.5rem;
             letter-spacing: 1px;
         }
 
         .profile-title {
             font-size: 1rem;
-            color: #666;
+            color: var(--profile-title);
             margin-bottom: 0.5rem;
         }
 
         .profile-tagline {
             font-size: 0.9rem;
-            color: #888;
+            color: var(--profile-tagline);
             margin-bottom: 1rem;
         }
 
@@ -881,13 +1528,13 @@
         .availability-dot {
             width: 8px;
             height: 8px;
-            background: #4ade80;
+            background: var(--availability-dot);
             border-radius: 50%;
         }
 
         .availability-text {
             font-size: 0.9rem;
-            color: #666;
+            color: var(--text-weak);
         }
 
         .social-icons {
@@ -898,7 +1545,7 @@
         .social-icon {
             width: 45px;
             height: 45px;
-            background: #364153;
+            background: var(--social-icon-bg);
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -911,7 +1558,7 @@
         .social-icon:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(54, 65, 83, 0.3);
-            background: #4a5568;
+            background: var(--social-icon-hover-bg);
         }
 
         .social-icon img {
@@ -1024,7 +1671,7 @@
         .nav-title {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #1a1a2e;
+            color: var(--text-strong);
             margin-bottom: 1.5rem;
         }
 
@@ -1039,7 +1686,7 @@
         }
 
         .nav-links-list a {
-            color: #666;
+            color: var(--text-weak);
             text-decoration: none;
             font-size: 1rem;
             display: flex;
@@ -1051,11 +1698,11 @@
         .nav-links-list a::before {
             content: "→";
             font-size: 0.6rem;
-            color: #666;
+            color: var(--text-weak);
         }
 
         .nav-links-list a:hover {
-            color: #4ade80;
+            color: var(--availability-dot);
         }
 
         /* Contact Info Column */
@@ -1067,7 +1714,7 @@
         .contact-title {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #1a1a2e;
+            color: var(--text-strong);
             margin-bottom: 1.5rem;
         }
 
@@ -1086,8 +1733,8 @@
         .contact-detail-icon {
             width: 40px;
             height: 40px;
-            background: #364153;
-            color: #ffffff;
+            background: var(--contact-detail-icon-bg);
+            color: var(--text-strong);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -1104,13 +1751,13 @@
 
         .contact-detail-label {
             font-size: 0.9rem;
-            color: #666;
+            color: var(--contact-detail-label);
             font-weight: 500;
         }
 
         .contact-detail-value {
             font-size: 1rem;
-            color: #1a1a2e;
+            color: var(--contact-detail-value);
             font-weight: 500;
         }
 
@@ -1136,7 +1783,7 @@
 
         .copyright {
             font-size: 0.9rem;
-            color: #666;
+            color: var(--footer-text);
         }
 
         .footer-right {
@@ -1147,12 +1794,12 @@
 
         .site-credit {
             font-size: 0.9rem;
-            color: #666;
+            color: var(--footer-text);
         }
 
         .back-to-top {
-            background: #1a1a2e;
-            color: #ffffff;
+            background: var(--back-to-top-bg);
+            color: var(--text-strong);
             border: none;
             padding: 10px 20px;
             border-radius: 6px;
@@ -1163,7 +1810,7 @@
         }
 
         .back-to-top:hover {
-            background: #2a2a3e;
+            background: var(--back-to-top-hover-bg);
             transform: translateY(-2px);
         }
 
@@ -1222,9 +1869,22 @@
                 <li style="font-size: 1.2rem; font-weight: 700;"><a href="#projects">Projects</a></li>
                 <li style="font-size: 1.2rem; font-weight: 700;"><a href="#contact">Contact</a></li>
             </ul>
+            <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
             <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">⏾</button>
         </nav>
     </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <button id="mobileMenuClose" class="mobile-menu-close" aria-label="Close mobile menu">×</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -1744,6 +2404,37 @@
     </section>
 
     <script>
+        // Mobile menu functionality
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu when clicking on a link
+        mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
